@@ -48,10 +48,6 @@ int solve_quad(Values *val, Roots *roots) {
 	return 2;
 }
 
-
-
-
-
 int get_input(Values *val) {
   
   double a,b,c;
