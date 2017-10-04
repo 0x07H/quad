@@ -1,12 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//#include "quad.h"
-//#include "get_input.h"
-
 #include <math.h>
-//#include "quad.h"
 
+
+// coefs for ax^2 + bx + c = 0
+typedef struct {
+  double	a;
+  double	b;
+  double	c;
+} Values;
+
+// Real roots for ax^2 + bx + c = 0
+typedef struct {
+  double	x1;
+  double	x2;
+} Roots;
 
 int solve_quad(Values *val, Roots *roots) {
 	double a,b,c;  // coefs of quadratic , LOCAL COPIES 
@@ -40,21 +49,8 @@ int solve_quad(Values *val, Roots *roots) {
 }
 
 
-// coefs for ax^2 + bx + c = 0
-typedef struct {
-  double	a;
-  double	b;
-  double	c;
-} Values;
 
-// Real roots for ax^2 + bx + c = 0
-typedef struct {
-  double	x1;
-  double	x2;
-} Roots;
 
-// quadratic eqaution solver
-int solve_quad(Values *coef, Roots *root);
 
 int get_input(Values *val) {
   
