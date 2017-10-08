@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 
-
+//comment
 // coefs for ax^2 + bx + c = 0
 typedef struct {
   double	a;
